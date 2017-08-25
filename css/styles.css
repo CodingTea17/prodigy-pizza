@@ -1,13 +1,21 @@
 /* Custom Font Rule Creation */
 @font-face {
-  font-family: 'primetime';
-  src: URL('../fonts/primetime.ttf');
+  font-family: 'raleway';
+  src: URL('../fonts/Raleway-Regular.ttf');
+}
+@font-face {
+  font-family: 'raleway-b';
+  src: URL('../fonts/Raleway-Bold.ttf');
+}
+@font-face {
+  font-family: 'monoton';
+  src: URL('../fonts/monoton.ttf');
 }
 body {
   /*background: linear-gradient(to right, #e57373, #c62828);
   height: 100%;
   width: 100%;*/
-  font-family: "primetime";
+  font-family: "raleway", sans-serif;
 }
 a {
   color: #FAF8F2;
@@ -17,9 +25,16 @@ a:hover {
   color: #FAF8F2;
   text-decoration: none;
 }
+.form-check {
+  margin-bottom: 20px;
+}
+.logo {
+  font-family: "monoton";
+}
 .nav {
   height: 100px;
   font-size: 50px;
+  font-family: "raleway-b"
 }
 .row {
   height: 100%
@@ -28,7 +43,6 @@ a:hover {
   height: 100%;
   background-color: #FF8F00 !important;
 }
-
 .bg-amber {
   background-color: #FFC107;
 }
@@ -39,10 +53,21 @@ a:hover {
   color: #FAF8F2;
   text-decoration: none;
 }
+.mock-pages {
+  height: 900px;;
+}
+.card {
+  height: 100%;
+}
 .circle {
 	border-radius: 50%;
-	width: 200px;
-	height: 200px;
-  background: radial-gradient(circle, #fffa8a, #dba24a);
+	width: 400px;
+	height: 400px;
+  border: 2px solid #b71c1c;
+  margin-left: 50px;;
 	/* width and height can be anything, as long as they're equal */
+}
+#order-pizza {
+  display: none;
+  margin-top: 30px;
 }

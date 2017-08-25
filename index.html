@@ -5,7 +5,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link href="img/pizza.ico" rel="icon" type="image/ico" />
     <script src="js/jquery-3.2.1.js"></script>
-    <scirpt src="js/scripts.js"></scirpt>
+    <script src="js/scripts.js"></script>
     <title>Prodigy Pizza</title>
   </head>
   <body>
@@ -13,10 +13,10 @@
       <div class="container">
         <div class="row nav-fill">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Prodigy Pizza</a>
+            <p class="nav-link active logo" id="home">Prodigy Pizza</p>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Order</a>
+            <p class="nav-link" id="order">Order</p>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">About</a>
@@ -29,17 +29,59 @@
     </ul>
     <!-- MAIN CONTENT -->
     <div class=container>
-      <!-- MAIN PAGE DIV -->
-      <div class="card" id="main-page">
-
-      </div>
-      <!-- ORDER PAGE DIV -->
-      <div class="card" id="order-pizza">
-        <div class="card bg-light mb-3">
-          <div class="card-header">Create Your Own Prodigy</div>
-          <div class="card-body">
-            <h4 class="card-title">Light card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- MAIN PAGE DIV -->
+          <div class="mock-pages" id="main-page">
+            <div class="jumbotron">
+              <h1>Welcome To Prodigy Pizza</h1>
+            </div>
+          </div>
+          <!-- ORDER PAGE DIV -->
+          <div class="mock-pages" id="order-pizza">
+            <div class="card">
+              <div class="card bg-light">
+                <div class="card-header"><h1>Create Your Own Prodigy</h1></div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-7">
+                      <div class="circle">
+                      </div>
+                    </div>
+                    <div class="col-lg-5">
+                      <form id="pizza-maker">
+                        <div id="pizza-size-radio">
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="pizza-size" id="pizza-size-j" value="3" checked>
+                              Jumbo Sized - 16 inches (Will Feed 4-6)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="pizza-size" id="pizza-size-l" value="2">
+                              Large Sized - 14 inches (Will Feed 3-4)
+                            </label>
+                          </div>
+                          <div class="form-check disabled">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="pizza-size" id="pizza-size-m" value="1">
+                              Medium Sized - 12 inches (Will Feed 2-3)
+                            </label>
+                          </div>
+                          <div class="form-check disabled">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="pizza-size" id="pizza-size-s" value="0">
+                              Small Sized - 10 inches (Will Feed 1-2)
+                            </label>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
