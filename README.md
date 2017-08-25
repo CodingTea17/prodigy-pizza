@@ -1,6 +1,6 @@
 # _Prodigy Pizza Webpage_
 
-####  Allows a user to create a pizza and generates a price for their pizza, _8/18/2017_
+####  Allows a user to create a pizza and generates a price for their pizza, _8/25/2017_
 
 #### By _**Dawson Mortenson**_
 
