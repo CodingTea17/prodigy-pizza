@@ -21,9 +21,16 @@ a {
   color: #FAF8F2;
   text-decoration: none;
 }
-a:hover {
-  color: #FAF8F2;
+/*a:hover {
+  color: #ef5350;
   text-decoration: none;
+}*/
+.nav-item {
+  color: #FAF8F2;
+}
+.nav-item:hover {
+  cursor: pointer;
+  background-color: #C54949;
 }
 .form-check {
   margin-bottom: 40px;
@@ -41,10 +48,10 @@ a:hover {
 }
 .active {
   height: 100%;
-  background-color: #FF8F00 !important;
+  background-color: #b71c1c !important;
 }
 .bg-amber {
-  background-color: #FFC107;
+  background-color: #37474F;
 }
 .bg-darkred {
   background-color: #b71c1c;
@@ -73,9 +80,6 @@ a:hover {
 #submit-order {
   display: none;
 }
-#next-size {
-
-}
 #pizza-maker-row {
   margin-top: 60px;
 }
@@ -90,10 +94,8 @@ a:hover {
 }
 #pizza-topping-checkbox {
   display: none;
-  position: absolute;
-  top: 20%;
-  font-size: 25px;
-  font-size: 16px;
+  margin-top: 30px;
+  font-size: 20px;
 }
 #pizza-preview {
   width: 100%;
