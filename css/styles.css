@@ -1,0 +1,22 @@
+body {
+  /*background: linear-gradient(to right, #e57373, #c62828);
+  height: 100%;
+  width: 100%;*/
+}
+.navbar {
+  height: 100px;;
+}
+.bg-amber {
+  background-color: #FFC107;
+}
+.bg-darkred {
+  background-color: #b71c1c;
+}
+.text-eggshell {
+  color: #FAF8F2;
+  text-decoration: none;
+}
+.text-eggshell:hover {
+  color: #FAF8F2;
+  text-decoration: none;
+}
