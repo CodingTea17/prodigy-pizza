@@ -9,22 +9,42 @@
     <title>Prodigy Pizza</title>
   </head>
   <body>
-    <nav class="navbar navbar-light bg-amber">
+    <ul class="nav nav-pills bg-amber">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-          Bootstrap
-        </a>
+        <div class="row nav-fill">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Prodigy Pizza</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Other</a>
+          </li>
+        </div>
       </div>
-    </nav>
+    </ul>
+    <!-- MAIN CONTENT -->
     <div class=container>
+      <!-- MAIN PAGE DIV -->
+      <div class="card" id="main-page">
 
-      <div class="jumbotron">
-        <h1>Prodigy Pizza</h1>
       </div>
-
+      <!-- ORDER PAGE DIV -->
+      <div class="card" id="order-pizza">
+        <div class="card bg-light mb-3">
+          <div class="card-header">Create Your Own Prodigy</div>
+          <div class="card-body">
+            <h4 class="card-title">Light card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <nav class="navbar fixed-bottom navbar-light bg-darkred">
+    <nav class="nav fixed-bottom navbar-light bg-darkred">
       <div class="container">
         <a class="text-eggshell" href="#">Fixed bottom</a>
       </div>
