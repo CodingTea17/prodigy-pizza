@@ -12,25 +12,19 @@
   src: URL('../fonts/monoton.ttf');
 }
 body {
-  /*background: linear-gradient(to right, #e57373, #c62828);
-  height: 100%;
-  width: 100%;*/
   font-family: "raleway", sans-serif;
 }
-a {
-  color: #FAF8F2;
-  text-decoration: none;
-}
-/*a:hover {
-  color: #ef5350;
-  text-decoration: none;
-}*/
 .nav-item {
   color: #FAF8F2;
+  font-size: 50px;
+  font-family: "raleway-b"
 }
 .nav-item:hover {
   cursor: pointer;
   background-color: #C54949;
+}
+.jumbotron {
+  margin-top: 32px;
 }
 .form-check {
   margin-bottom: 40px;
@@ -40,8 +34,6 @@ a {
 }
 .nav {
   height: 100px;
-  font-size: 50px;
-  font-family: "raleway-b"
 }
 .row {
   height: 100%

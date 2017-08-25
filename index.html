@@ -19,10 +19,10 @@
             <p class="nav-link" id="order">Order</p>
           </li>
           <li class="nav-item">
-            <p class="nav-link" href="#">About</p>
+            <p class="nav-link" id="about">About</p>
           </li>
           <li class="nav-item">
-            <p class="nav-link" href="#">Other</p>
+            <p class="nav-link" id="other">Other</p>
           </li>
         </div>
       </div>
@@ -34,8 +34,10 @@
           <!-- MAIN PAGE DIV -->
           <div class="mock-pages" id="main-page">
             <div class="jumbotron">
-              <h1>Welcome To Prodigy Pizza</h1>
+              <h1 class="display-3">Welcome To Prodigy Pizza</h1>
+              <p class="lead">Enjoy our hand-tossed, woodfired pizza.</p>
             </div>
+            <img src="img/pizza.jpg" alt="perfect pizza" class="rounded mx-auto d-block" />
           </div>
           <!-- ORDER PAGE DIV -->
           <div class="mock-pages" id="order-pizza">
@@ -190,7 +192,7 @@
                           </ul>
                           <h3>Your Total:</h3>
                           <p>$ <span id="final-price"><!-- FINAL PRICE WILL BE PUT HERE --></span></p>
-                          <button id="submit-order" class="btn btn-success" type="button">Submit Your Pizza Order!</button>
+                          <button id="submit-order" class="btn btn-success" type="submit">Submit Your Pizza Order!</button>
                         </div>
                       </form>
                     </div>
@@ -204,7 +206,18 @@
     </div>
     <nav class="nav fixed-bottom navbar-light bg-darkred">
       <div class="container">
-        <a class="text-eggshell" href="#">Fixed bottom</a>
+        <div class="row">
+          <div class="col-lg-6 text-eggshell">
+            <h5 class="text-eggshell">Contact:</h5>
+            <p>Email: prodigy@pizza.com</p>
+            <p>Phone: 555-555-555</p>
+          </div>
+          <div class="col-lg-6 text-eggshell">
+            <h5>Hours:</h5>
+            <p>Sunday-Thursday: 12pm - 9pm</p>
+            <p>Friday & Saturday: 12pm - 12am</p>
+          </div>
+        </div>
       </div>
     </nav>
   </body>

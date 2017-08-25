@@ -13,12 +13,11 @@ Pizza.prototype.pizzaPriceCalulator = function () {
   var numberOfToppings = 0;
   // Adds the base price of the crust which is $1 per inch in diameter
   totalPrice += this.crust.crustSize();
-  // alert(this.toppings);
   this.toppings.forEach(function(){
     numberOfToppings += 1;
   });
   totalPrice += numberOfToppings * (this.crust.crustSize() / 10);
-  totalPrice = Number(totalPrice).toFixed(2);  
+  totalPrice = Number(totalPrice).toFixed(2);
   return totalPrice;
 };
 
@@ -37,13 +36,22 @@ $(document).ready(function(){
   var pizza;
   var toppingsSelection = [];
   var crustSize = 3;
-
+  $("#home").click(function(){
+    location.reload();
+  });
+  $("#about").click(function(){
+    alert("This page is still under construction. Try another.");
+  });
+  $("#other").click(function(){
+    alert("This page is still under construction. Try another.");
+  });
   // Mock changes page to order page
   $("#order").click(function(){
+    $("#order").addClass("active");
+    $("#home").removeClass("active");
     $("#main-page").hide();
     $("#order-pizza").css({"visibility":"visible"});
     $("#pizza-size-radio").show();
-    // $("#pizza-topping-checkbox").hide();
     $("#pizza-maker input").change(function() {
       crustSize = parseInt($("input[name=pizzaSize]:checked").val());
       if(crustSize === 3){
@@ -63,8 +71,8 @@ $(document).ready(function(){
     $("#next-size").click(function(){
       $("#pizza-size-radio").hide();
       $("#pizza-topping-checkbox").show();
-      // Code to append selected toppings to a list?
 
+      // Code to append selected toppings to a list
       $("#next-toppings").click(function(){
         $("#crust-size").text(pizzaCrust.name);
         $('input[name=pizzaToppings]:checked').each(function(i){
@@ -76,12 +84,12 @@ $(document).ready(function(){
 
         $("#final-price").text(pizza.pizzaPriceCalulator());
 
-
         $("#pizza-topping-checkbox").hide();
         $("#pizza-summary").show();
         $("form#pizza-maker").submit(function(event){
           event.preventDefault();
-          $("#order-confirmation-page").show();
+          alert("Order submitted! Have a great day! :D")
+          location.reload();
         })
       });
     });
