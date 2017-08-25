@@ -1,6 +1,17 @@
 // Backend Logic
+function Pizza(size, toppings) {
+  this.size = size;
+  this.toppings = toppings;
+  this.finalPrice = 0;
+}
+
+Pizza.prototype.pizzaPriceCalulator = function () {
+  var addUpPrice = 0;
+  // Adds the base price of the crust which is $1 per inch in diameter
+  addUpPrice += parseInt(this.size);
 
 
+};
 
 
 
@@ -12,7 +23,9 @@ $(document).ready(function(){
   // Mock changes page to order page
   $("#order").click(function(){
     $("#main-page").hide();
-    $("#order-pizza").show();
+    $("#order-pizza").css({"visibility":"visible"});
+    $("#pizza-size-radio").show();
+    // $("#pizza-topping-checkbox").hide();
     $("#pizza-maker input").change(function() {
       if($("input[name=pizzaSize]:checked").val() === "3"){
         $(".circle").css({"height": "400px", "width":"400px"});
@@ -25,7 +38,8 @@ $(document).ready(function(){
       }
     });
     $("#next-size").click(function(){
-
+      $("#pizza-size-radio").hide();
+      $("#pizza-topping-checkbox").show();
     })
   });
 
