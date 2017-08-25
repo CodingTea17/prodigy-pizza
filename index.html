@@ -90,19 +90,19 @@
                               <div class="form-check">
                                 <div class="row">
                                   <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" value="pepperoni">
+                                    <input class="form-check-input" type="checkbox" name="pizzaToppings" value="pepperoni">
                                     Pepperoni
                                   </label>
                                 </div>
                                 <div class="row">
                                   <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" value="salami">
+                                    <input class="form-check-input" type="checkbox" name="pizzaToppings" value="salami">
                                     Salami
                                   </label>
                                 </div>
                                 <div class="row">
                                   <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" value="canadian bacon">
+                                    <input class="form-check-input" type="checkbox" name="pizzaToppings" value="canadian bacon">
                                     Canadian Bacon
                                   </label>
                                 </div>
@@ -112,19 +112,19 @@
                               <div class="form-check">
                                 <div class="row">
                                   <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" value="bacon">
+                                    <input class="form-check-input" type="checkbox" name="pizzaToppings" value="bacon">
                                     Bacon
                                   </label>
                                 </div>
                                 <div class="row">
                                   <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" value="beef">
+                                    <input class="form-check-input" type="checkbox" name="pizzaToppings" value="beef">
                                     Beef
                                   </label>
                                 </div>
                                 <div class="row">
                                   <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" value="sausage">
+                                    <input class="form-check-input" type="checkbox" name="pizzaToppings" value="sausage">
                                     Sausage
                                   </label>
                                 </div>
@@ -141,19 +141,19 @@
                               <div class="form-check">
                                 <div class="row">
                                   <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" value="">
+                                    <input class="form-check-input" type="checkbox" name="pizzaToppings" value="mushrooms">
                                     Mushrooms
                                   </label>
                                 </div>
                                 <div class="row">
                                   <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" value="">
+                                    <input class="form-check-input" type="checkbox" name="pizzaToppings" value="onions">
                                     Onions
                                   </label>
                                 </div>
                                 <div class="row">
                                   <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" value="">
+                                    <input class="form-check-input" type="checkbox" name="pizzaToppings" value="olives">
                                     Olives
                                   </label>
                                 </div>
@@ -163,13 +163,13 @@
                               <div class="form-check">
                                 <div class="row">
                                   <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" value="">
+                                    <input class="form-check-input" type="checkbox" name="pizzaToppings" value="green peppers">
                                     Green Peppers
                                   </label>
                                 </div>
                                 <div class="row">
                                   <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" value="">
+                                    <input class="form-check-input" type="checkbox" name="pizzaToppings" value="pineapple">
                                     Pineapple
                                   </label>
                                 </div>
@@ -180,6 +180,16 @@
                         </div>
                         <div id="pizza-summary">
                           <h1>Confirm order</h1>
+                          <h3>Pizza Size</h3>
+                          <ul>
+                            <li><span id="crust-size"><!-- CRUST SIZE WILL BE PUT HERE --></span></li>
+                          </ul>
+                          <h3>Pizza Toppings</h3>
+                          <ul id="pizza-summary-toppings">
+                            <!-- TOPPINGS WILL BE APPENDED HERE -->
+                          </ul>
+                          <h3>Your Total:</h3>
+                          <p>$ <span id="final-price"><!-- FINAL PRICE WILL BE PUT HERE --></span></p>
                           <button id="submit-order" class="btn btn-success" type="button">Submit Your Pizza Order!</button>
                         </div>
                       </form>
