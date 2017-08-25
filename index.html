@@ -42,40 +42,42 @@
             <div class="card">
               <div class="card bg-light">
                 <div class="card-header"><h1>Create Your Own Prodigy</h1></div>
-                <div class="card-body">
+                <div class="card-body" id="pizza-maker-row">
                   <div class="row">
-                    <div class="col-lg-7">
+                    <div id="pizza-preview" class="col-lg-6">
                       <div class="circle">
                       </div>
                     </div>
-                    <div class="col-lg-5">
+                    <div id="pizza-form" class="col-lg-6">
                       <form id="pizza-maker">
                         <div id="pizza-size-radio">
                           <div class="form-check">
                             <label class="form-check-label">
-                              <input class="form-check-input" type="radio" name="pizza-size" id="pizza-size-j" value="3" checked>
-                              Jumbo Sized - 16 inches (Will Feed 4-6)
+                              <input class="form-check-input" type="radio" name="pizzaSize" id="pizza-size-j" value="3" checked>
+                              Jumbo Sized - 16 inches (Feeds 4-6)
                             </label>
                           </div>
                           <div class="form-check">
                             <label class="form-check-label">
-                              <input class="form-check-input" type="radio" name="pizza-size" id="pizza-size-l" value="2">
-                              Large Sized - 14 inches (Will Feed 3-4)
+                              <input class="form-check-input" type="radio" name="pizzaSize" id="pizza-size-l" value="2">
+                              Large Sized - 14 inches (Feeds 3-4)
                             </label>
                           </div>
-                          <div class="form-check disabled">
+                          <div class="form-check">
                             <label class="form-check-label">
-                              <input class="form-check-input" type="radio" name="pizza-size" id="pizza-size-m" value="1">
-                              Medium Sized - 12 inches (Will Feed 2-3)
+                              <input class="form-check-input" type="radio" name="pizzaSize" id="pizza-size-m" value="1">
+                              Medium Sized - 12 inches (Feeds 2-3)
                             </label>
                           </div>
-                          <div class="form-check disabled">
+                          <div class="form-check">
                             <label class="form-check-label">
-                              <input class="form-check-input" type="radio" name="pizza-size" id="pizza-size-s" value="0">
-                              Small Sized - 10 inches (Will Feed 1-2)
+                              <input class="form-check-input" type="radio" name="pizzaSize" id="pizza-size-s" value="0">
+                              Small Sized - 10 inches (Feeds 1-2)
                             </label>
                           </div>
+                          <button id="next-size" class="btn btn-success next" type="button">Next</button>
                         </div>
+                        <button id="submit-order" class="btn btn-success" type="button">Submit Your Pizza Order!</button>
                       </form>
                     </div>
                   </div>
