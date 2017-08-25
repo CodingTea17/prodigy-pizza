@@ -77,9 +77,6 @@ a {
 .next {
   float: right;
 }
-#submit-order {
-  display: none;
-}
 #pizza-maker-row {
   margin-top: 60px;
 }
@@ -96,6 +93,9 @@ a {
   display: none;
   margin-top: 30px;
   font-size: 20px;
+}
+#pizza-summary {
+  display: none;
 }
 #pizza-preview {
   width: 100%;
